@@ -116,6 +116,8 @@ Estos supuestos permitieron delimitar el alcance del modelo y evitar complejidad
 
 ## 📈 Diagrama final entregado
 > (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
+> <img width="980" height="760" alt="image" src="https://github.com/user-attachments/assets/4f83dcf5-b728-4924-b666-0881a0194092" />
+
 
 ## 📋 Tabla de actores, entidades o componentes (si aplica)
 
