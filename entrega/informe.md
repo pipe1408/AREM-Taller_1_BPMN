@@ -115,7 +115,6 @@ Para el modelado del proceso se asumió que:
 Estos supuestos permitieron delimitar el alcance del modelo y evitar complejidad excesiva.
 
 ## 📈 Diagrama final entregado
-> (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
 > <img width="980" height="760" alt="image" src="https://github.com/user-attachments/assets/4f83dcf5-b728-4924-b666-0881a0194092" />
 
 
@@ -123,7 +122,9 @@ Estos supuestos permitieron delimitar el alcance del modelo y evitar complejidad
 
 | Nombre del elemento | Tipo | Descripción | Responsable |
 |---------------------|------|-------------|-------------|
-| Ej: Paciente        | Actor | Usuario que agenda una cita médica | Cliente |
+| Conductor | Actor | Usuario que inicia sesión en la aplicación, activa la ruta escolar, confirma el abordaje del estudiante y registra posibles ausencias durante el recorrido | Cliente |
+| Sistema | Actor | Plataforma que registra el abordaje, captura la ubicación GPS y genera notificaciones automáticas para informar el estado de la ruta | Equipo de desarrollo |
+| Padre-acudiente | Actor | Usuario que recibe notificaciones del sistema y puede visualizar en tiempo real la ubicación del estudiante durante la ruta escolar | Cliente |
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
