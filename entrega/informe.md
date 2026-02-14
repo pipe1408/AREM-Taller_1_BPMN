@@ -1,7 +1,7 @@
 # 📄 Informe Técnico del Taller
 
 ## 🔖 Nombre del Taller
-_Taller 1 - BPMN
+Taller 1 - BPMN
 
 ## 👥 Integrantes del equipo
 - Felipe Ballesteros
@@ -9,79 +9,110 @@ _Taller 1 - BPMN
 - Tomas Ariza
 
 ## 🧠 Descripción general del trabajo
-El objetivo del presente taller fue modelar un proceso de negocio real utilizando la notación BPMN (Business Process Model and Notation), identificando sus eventos, actividades, decisiones, actores involucrados y puntos críticos del flujo.
+El presente trabajo tuvo como objetivo modelar un proceso de negocio real utilizando la notación BPMN (Business Process Model and Notation), tomando como cliente la aplicación BO-TECH TRACKING, una solución tecnológica enfocada en el rastreo y monitoreo en tiempo real de transporte escolar.
 
-Durante la actividad en clase se trabajó con el caso base de la Clínica Salud Viva, específicamente el proceso de agendamiento de citas médicas. El ejercicio permitió comprender la estructura formal de un modelo BPMN y su utilidad para representar procesos organizacionales de manera clara, estandarizada y comprensible para diferentes actores.
+La aplicación permite a padres de familia y coordinadores hacer seguimiento a rutas escolares mediante geolocalización, recibir notificaciones automáticas y garantizar mayor seguridad en el traslado de estudiantes.
 
-El desarrollo del taller se realizó de manera colaborativa, estructurando primero el flujo lógico del proceso y posteriormente representándolo mediante diagramación formal en una herramienta de modelado.
+El proceso seleccionado para modelar fue el proceso de monitoreo y notificación de ruta escolar en tiempo real, desde que el vehículo inicia su recorrido hasta que el estudiante llega a su destino.
 
-## 🔧 Proceso de desarrollo
-Para la elaboración del modelo BPMN se siguieron los siguientes pasos metodológicos:
+
+## 2. Proceso de desarrollo
+
+Para la elaboración del modelo BPMN se siguieron los siguientes pasos:
 
 ### 2.1 Identificación del alcance del proceso
-Se definió que el proceso iniciaría cuando el paciente requiere agendar una cita médica y finalizaría cuando la cita queda confirmada y el paciente recibe notificación.
+
+Se definió que el proceso iniciaría cuando el conductor activa la ruta en el sistema y finalizaría cuando el estudiante llega a su destino y se envía la notificación correspondiente al acudiente.
 
 ### 2.2 Identificación de actores y roles
-Se determinaron los siguientes participantes:
 
-- Paciente  
-- Sistema de gestión de citas  
-- Base de datos  
-- Servicio de notificaciones  
+Se identificaron los siguientes participantes:
+
+- Conductor
+- Sistema BO-TECH TRACKING
+- Padre o acudiente
+- Plataforma de notificaciones
+- Base de datos
 
 ### 2.3 Definición de actividades principales
-Se modelaron las tareas realizadas por el paciente (selección de especialidad, médico y fecha) y las tareas automáticas del sistema (verificación de disponibilidad, registro en base de datos y envío de notificación).
+
+Se modelaron las siguientes actividades:
+
+- Activación de la ruta por parte del conductor.
+- Captura de ubicación GPS en tiempo real.
+- Actualización de datos en el sistema.
+- Visualización del recorrido por parte del acudiente.
+- Generación y envío de notificaciones automáticas.
+- Confirmación de llegada del estudiante.
 
 ### 2.4 Modelado de decisiones (Gateways)
+
 Se incluyeron compuertas exclusivas para validar:
 
-- Disponibilidad de médicos  
-- Disponibilidad de la fecha seleccionada  
+- ¿El GPS está activo y funcionando correctamente?
+- ¿El estudiante abordó el vehículo?
+- ¿El vehículo llegó al destino?
+- ¿Se debe enviar notificación automática?
+
+Estas decisiones permiten modelar escenarios alternativos como fallos de señal o retrasos en la ruta.
 
 ### 2.5 Ajustes y refinamiento del modelo
-Inicialmente se planteó un flujo lineal; posteriormente se incorporaron decisiones y eventos alternativos (por ejemplo, cuando no hay disponibilidad), mejorando la precisión del modelo.
 
-La herramienta utilizada para la diagramación fue draw.io (diagrams.net), permitiendo aplicar correctamente los elementos estándar de BPMN 2.0.
+Durante el modelado se ajustó el flujo para diferenciar claramente tareas manuales (realizadas por conductor o acudiente) y tareas automáticas (ejecutadas por el sistema). Además, se incorporaron eventos intermedios de mensaje para representar el envío de notificaciones en tiempo real.
 
-## 🧩 Análisis del modelo propuesto
+
+## 3. Análisis del modelo propuesto
+
 ### 3.1 Cómo se estructura el modelo entregado
 
-El modelo se encuentra estructurado mediante un pool principal correspondiente a la Clínica Salud Viva, dividido en lanes que representan los roles del proceso.  
+El modelo se estructuró con un pool principal correspondiente a BO-TECH TRACKING, dividido en lanes que representan los distintos actores del proceso:
 
-El flujo inicia con un evento de inicio simple, continúa con tareas de usuario y tareas automáticas del sistema, incluye gateways exclusivos para la toma de decisiones y finaliza con un evento de fin que representa la confirmación de la cita.
+- Conductor
+- Sistema
+- Padre o acudiente
 
-La estructura respeta los principios básicos de BPMN:
+El flujo inicia con un evento de inicio cuando el conductor activa la ruta. Posteriormente, el sistema comienza a registrar la ubicación en tiempo real, generando actualizaciones continuas. Cuando el estudiante aborda el vehículo, el sistema envía una notificación automática al acudiente.
 
-- Un evento de inicio claro  
-- Secuencia lógica de tareas  
-- Decisiones explícitas  
-- Evento de fin definido  
+Finalmente, al llegar al destino, se genera una notificación de llegada y el proceso concluye con un evento de fin.
+
+El modelo incluye:
+
+- Evento de inicio
+- Tareas manuales y automáticas
+- Gateways exclusivos
+- Eventos intermedios de mensaje
+- Evento de fin
 
 ### 3.2 Cómo representa las necesidades del cliente
 
-El modelo refleja adecuadamente el proceso real de agendamiento digital, incluyendo:
+El modelo representa adecuadamente las necesidades principales de la aplicación:
 
-- Interacción entre usuario y sistema  
-- Validación de disponibilidad en tiempo real  
-- Registro persistente en base de datos  
-- Notificación automática al paciente  
+- Seguridad en el transporte escolar.
+- Información en tiempo real.
+- Notificaciones automáticas.
+- Control y trazabilidad del recorrido.
+- Reducción de incertidumbre para los padres.
 
-Además, permite identificar posibles cuellos de botella, como la falta de disponibilidad médica o fallos en la confirmación de la cita.
+Además, permite identificar puntos críticos como:
 
-De esta manera, el modelo no solo representa el flujo actual, sino que también sirve como herramienta para análisis y mejora del proceso.
+- Fallas en el GPS.
+- Problemas de conectividad.
+- Retrasos en la ruta.
+- Errores en el envío de notificaciones.
+
+Esto facilita el análisis para mejoras futuras del sistema.
 
 ### 3.3 Supuestos tomados
 
-Para la elaboración del modelo se asumió que:
+Para el modelado del proceso se asumió que:
 
-- El paciente ya se encuentra registrado en el sistema.  
-- La plataforma funciona correctamente y no presenta fallas técnicas.  
-- La disponibilidad médica se encuentra actualizada en tiempo real.  
-- El envío de notificaciones se realiza de manera automática.  
-- No se contemplan cancelaciones o reprogramaciones en este modelo base.  
+- El conductor cuenta con conexión a internet.
+- El GPS del dispositivo funciona correctamente.
+- El acudiente tiene instalada la aplicación.
+- Las notificaciones push funcionan sin retrasos.
+- La base de datos registra la información en tiempo real.
 
-Estos supuestos permitieron delimitar el alcance del proceso y evitar una complejidad excesiva en esta primera aproximación.
-
+Estos supuestos permitieron delimitar el alcance del modelo y evitar complejidad excesiva.
 
 ## 📈 Diagrama final entregado
 > (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
