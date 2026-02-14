@@ -125,15 +125,17 @@ Estos supuestos permitieron delimitar el alcance del modelo y evitar complejidad
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
-(Ej: Buenas prácticas BPMN, comparación TOGAF vs C4, principios de seguridad STRIDE, etc.)
+Simbología básica y buenas prácticas de modelamiento BPMN
 
 ### Resumen:
-Describa en 2–3 párrafos lo investigado, citando fuentes cuando sea necesario. Incluya cómo se relaciona con el taller.
+La investigación estuvo centrada en el cumplimitno del principal objetivo del taller, o sea aprender a aplicar el estándar BPMN para modelar los procesos de un negocio. Tanto para la Clínica Salud Viva como para BO-TECH, investigar la simbología de BPMN para poder diseñar un modelo correcto fue fundamental para el desarrollo de este taller.
+
+Las tres fuentes utilizadas sirvieron complementariamente no solo para entender el estándar BPMN, sino también para entender cómo trasladar el funcionamiento de un negocio real a este tipo de modelos, especialmente para saber identificar los diferentes elementos como eventos, actividades, gateways y flujos.
+
 
 ## 📚 Referencias
-- [1] Apellido, Nombre. *Título*. Año. URL o DOI.
-- [2] Fuente oficial BPMN: https://www.omg.org/spec/BPMN/
+- [referencias.md](referencias.md)
 
 ---
 
-_Este documento hace parte de la entrega del taller X del curso AREM (Arquitectura Empresarial) - Universidad de La Sabana._
+_Este documento hace parte de la entrega del taller 1 del curso AREM (Arquitectura Empresarial) - Universidad de La Sabana._

@@ -11,12 +11,8 @@ _Taller 1 - BPMN_
 
 1. BPMN Quick Guide. *BPMN Quick Guide (Second Edition)*. [https://www.bpmnquickguide.com/quickguide/bpmn-quick-guide/bpmn-quick-guide](https://www.bpmnquickguide.com/quickguide/bpmn-quick-guide/bpmn-quick-guide). Fecha de consulta: 13/02/2026
 2. Visual Paradigm. *BPMN Notation Overview*. [https://www.visual-paradigm.com/guide/bpmn/](https://www.visual-paradigm.com/guide/bpmn/). Fecha de consulta: 13/02/2026
+3. Qflow BPM. *BPMN: Mejores prácticas para modelar procesos de negocio*. [https://qflowbpm.com/es/bpmn-mejores-practicas-2/](https://qflowbpm.com/es/bpmn-mejores-practicas-2/). Fecha de consulta: 13/02/2026. ([qflowbpm.com](https://qflowbpm.com/es/bpmn-mejores-practicas-2/))
 
-
-1. Apellido, Nombre. *Título del libro o artículo*. Editorial, Año. URL o DOI.  
-2. Organización. *Especificación técnica o estándar consultado*. URL.  
-3. Sitio web institucional. "Título del artículo o página". [Enlace](https://ejemplo.com). Fecha de consulta: DD/MM/AAAA.  
-4. Otro recurso académico o técnico citado.
 
 ---
 
